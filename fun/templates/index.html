@@ -1,0 +1,99 @@
+{% extends 'first.html' %}
+<!DOCTYPE html>
+<head>
+  {% block content %}
+  <style>
+    .bodys {
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      size: 10cm;
+    }
+    svg {
+      position: absolute;
+      top: 325px;
+      right: 100px;
+      width: 10%;
+    }
+    .svg1 {
+      position: absolute;
+      top: 325px;
+      right: 280px;
+      width: 10%;
+    }
+    h3 {
+      position: absolute;
+      top: 325px;
+      left: 175px;
+      width: 10%;
+      color: orangered;
+      font-size: 30px;
+    }
+    h8 {
+      font-style: italic;
+      position: absolute;
+      top: 280px;
+      right: 100px;
+      width: 10%;
+      color: orangered;
+      font-size: 20px;
+    }
+    h9 {
+      font-style: italic;
+      position: absolute;
+      top: 280px;
+      right: 280px;
+      width: 10%;
+      color: orangered;
+      font-size: 20px;
+    }
+    h10 {
+      font-style: bold;
+      position: absolute;
+      bottom: 70px;
+      right: 400px;
+      width: 40%;
+      color: #d0f654;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body class="bodys">
+  <h8>CURRENT IQ LEVEL IS</h8>
+  <svg id="svg" viewbox="0 0 100 100">
+    <circle cx="50" cy="50" r="45" fill="#FDB900" />
+    <path
+      fill="none"
+      stroke-linecap="round"
+      stroke-width="5"
+      stroke="#fff"
+      stroke-dasharray="{{score}},{{score2}}"
+      d="M50 10
+                 a 40 40 0 0 1 0 80
+                 a 40 40 0 0 1 0 -80"
+    />
+    <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">
+      {{sco}}%
+    </text>
+  </svg>
+  <h9>PREVIOUS PERCENTAGE</h9>
+  <svg class="svg1" id="svg" viewbox="0 0 100 100">
+    <circle cx="50" cy="50" r="45" fill="#b042f5" />
+    <path
+      fill="none"
+      stroke-linecap="round"
+      stroke-width="5"
+      stroke="#fff"
+      stroke-dasharray="{{pscore}},{{pscore1}}"
+      d="M50 10
+                 a 40 40 0 0 1 0 80
+                 a 40 40 0 0 1 0 -80"
+    />
+    <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">
+      {{psco}}%
+    </text>
+  </svg>
+  <h3>ATTEMPTS {{re}}</h3>
+  <h10>FOR REATTEMPT CLCIK START</h10>
+
+  {% endblock %}
+</body>

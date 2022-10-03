@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'result1.css' %}" />
+</head>
+<body>
+  <h1>"THINK INNOVATIVE"</h1>
+  <form action="res" method="POST">
+    {% csrf_token %} {% for out in outer %}
+    <h5 class="relative">{{out.quest}}</h5>
+    <div class="absolute">
+      <input
+        type="radio"
+        id="1"
+        name="{{out.id}}"
+        value="{{out.choi1}}"
+      />{{out.choi1}}<br />
+      <input
+        type="radio"
+        id="1"
+        name="{{out.id}}"
+        value="{{out.choi2}}"
+      />{{out.choi2}}<br />
+      <input
+        type="radio"
+        id="1"
+        name="{{out.id}}"
+        value="{{out.choi3}}"
+      />{{out.choi3}}<br />
+      <input
+        type="radio"
+        id="1"
+        name="{{out.id}}"
+        value="{{out.choi4}}"
+        style="text-align: center"
+      />{{out.choi4}}<br />
+    </div>
+    {% endfor %} <input type="hidden" name="list" value="{{out1}}" /><input
+      type="hidden"
+      id="o"
+      name="in"
+      value="{{in}}"
+    /><br />
+    {% if user.is_authenticated %}
+    <input type="hidden" name="uname" value="{{user.username}}" />
+    {% endif %}
+    <h12 style="color: red">Must answer all qustion </h12><br />
+    <input type="submit" name="sub" value="submit" class="aj" />
+  </form>
+</body>

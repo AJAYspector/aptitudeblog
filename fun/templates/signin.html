@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'sgnc.css' %}" />
+    <title>sign-in</title>
+  </head>
+  <body class="sign">
+    <div>
+      <h3>SIGN-IN</h3>
+      <form action="" method="POST">
+        <table class="centre">
+          {% csrf_token %}
+          <tr>
+            <td><p>UserName:</p></td>
+            <td>
+              <input type="text" name="name1" style="padding: 4px" />
+            </td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td>
+              <input type="password" name="password3" style="padding: 4px" />
+            </td>
+            <td>
+              <div style="color: red">{{message}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="submit"
+                name="submit"
+                value="SIGN-IN"
+                style="background-color: green"
+              />
+            </td>
+            <td>
+              <button><a href="login">SIGN-UP</a></button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

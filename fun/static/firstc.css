@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(16, 121, 213);
+    background-image: url("bg1.jpeg");
+    background-size: cover;
+
+}
+h1{
+    text-align: center;
+    font-size: 10;
+    font-style: Bold;
+    color: rgb(252, 252, 252);
+    border-style: solid;
+    background-color: #2596be;
+    border-width: 15px 10px;
+    border-color: #2596be;
+    border-radius: 20px;
+    font-style: oblique;
+  }
+  h4 {
+    background-color: antiquewhite;
+    border-width: 10px 11px;
+    border-color: brown;
+    font-size: 23px;
+  }
+  input {
+    background-color: rgb(227, 224, 127);
+    border-style: solid;
+    border-color: rgb(227, 224, 127);
+    border-width: 5px 4px;
+    margin-right: 620px;
+    margin-top: 360px;
+    color: #000;
+    font-size: 30px;
+    border-radius: 20px;
+    box-sizing: 60px;
+    
+
+  }
+  .sign{
+       width: 30%;
+        padding: 0px;
+        border: 5px solid #000;
+        margin-top: 100px;
+        text-align: center;
+        border-radius: 20px;
+  }
+  p{
+    font-size: 25px;
+    font-style:italic;
+    color: rgb(246, 238, 126);
+    text-transform: capitalize;
+  }
+  .button1{
+    background-color:rgb(213, 221, 219);
+    position: absolute;
+    bottom: 100px;
+    left: 600px;
+    height: 30px;
+    width: 20%;
+    border-radius: 20px;
+    border: none  ;
+    font-size: larger;
+  }
+  .button2{
+    background-color:rgb(213, 221, 219);
+    position: absolute;
+    bottom: 140px;
+    height: 30px;
+    left: 600px;
+    width: 20%;
+    border-radius: 20px;
+    border: none  ;
+    font-size: larger;
+  }
+  .log{
+    font-size: 20px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: rgb(145, 234, 212);
+  }
+h11 {
+  font-family: cursive;
+  position: absolute;
+  right: 34%;
+  top: 57%;
+  font-size: 20px;
+  color: #d0f654;
+}

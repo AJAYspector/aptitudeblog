@@ -1,0 +1,40 @@
+body{
+    background-image: url('bgres.jpg');
+    text-align: center;
+    color: aliceblue;
+}
+.relative {
+    position: relative;
+    width: 1500px;
+    height: 20px;
+    border: 3px hidden;
+    text-align: left;
+    font-style: italic;
+    font-size: larger;
+  } 
+.absolute{
+    position:-webkit-sticky;
+    top: 180px;
+    right: 10cm;
+    width: 400px;
+    height: 100px;
+    border: 3px ;
+    text-align:left ;
+    font-size: 20px;
+  }
+  label {
+    cursor: default;
+  }
+  h1{
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+    font-stretch: extra-expanded;
+    color: rgb(25, 30, 178);
+  }
+  .aj{
+    font-size: larger;
+    color: rgb(85, 185, 125);
+    border-style: hidden;
+    border-radius: 10px;
+  }
