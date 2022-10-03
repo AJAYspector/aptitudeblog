@@ -1,6 +1,6 @@
 from distutils.command.upload import upload
 from secrets import choice
-from tkinter.messagebox import QUESTION
+from django.db.models.deletion import QUESTION
 from unicodedata import name
 from django.db import models
 from django.forms import CharField
